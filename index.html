@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hima Bindu Akkamgari | Portfolio</title>
+    <meta name="description"
+        content="Personal Portfolio of Hima Bindu Akkamgari, an aspiring Data Analyst and Computer Science Student.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Phosphor Icons for modern minimalist icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <a href="#home" class="logo">Hima Bindu</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu glass">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#certifications" class="mobile-link">Certifications</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-padding">
+        <div class="container hero-content">
+            <div class="hero-text reveal-left">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="gradient-text">Hima Bindu Akkamgari</h1>
+                <h2 class="role">Aspiring Data Analyst</h2>
+                <p class="hero-desc">Building Bridges Between Data and Strategic Decision-Making. Currently pursuing
+                    Computer Science Engineering at MNR Engineering College of Technology.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="ph-bold ph-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal-right">
+                <div class="blob-shape">
+                    <i class="ph-duotone ph-chart-bar giant-icon"></i>
+                </div>
+                <div class="floating-badge badge-1 glass-card">
+                    <i class="ph-fill ph-code"></i> Python & SQL
+                </div>
+                <div class="floating-badge badge-2 glass-card">
+                    <i class="ph-fill ph-chart-pie-slice"></i> PowerBI & Tableau
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding alt-bg">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal-up" style="transition-delay: 0.1s;">
+                    <h3>From Curious Explorer to AI Builder</h3>
+                    <p>I am a Data Analytics enthusiast based in Hyderabad, India. My journey involves extracting
+                        complex datasets and transforming them into beautiful, understandable, and actionable stories. I
+                        love tackling real-world problems through data models, automation, and visualization.</p>
+                    <p>I focus on finding the "why" behind data, whether it's understanding YouTube trends, building ETL
+                        pipelines, or implementing machine learning models for forecasting and AB testing.</p>
+                </div>
+                <div class="skills-container reveal-up" style="transition-delay: 0.2s;">
+                    <h3>Core Skills</h3>
+                    <div class="skills-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">PowerBI</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Data Visualization</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Databricks</span>
+                        <span class="tag">Pandas / EDA</span>
+                        <span class="tag">Excel Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Certifications & Education</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Present</span>
+                        <h3>B.Tech - Computer Science Engineering</h3>
+                        <h4>MNR Engineering College of Technology, Hyderabad</h4>
+                        <p>Focusing on Analytical Skills and Engineering fundamentals.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Analytics & BI</span>
+                        <h3>Fundamentals of Data Analysis & BI</h3>
+                        <h4>TechMinds Academy, Simplilearn, Cognitive Class</h4>
+                        <p>Certified in SQL Analytics & BI on Databricks, PowerBI basics, and Tableau Online.
+                            Specialized in data storytelling and transformation.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Programming & AI</span>
+                        <h3>Python for Data Analytics & AI Automation</h3>
+                        <h4>Simplilearn, IIDE, The Product Space</h4>
+                        <p>Completed intensive training in Python, No-code AI agents (n8n, Lovable), and prompt
+                            engineering to supercharge productivity.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Data & Tools</span>
+                        <h3>Excel Bootcamp</h3>
+                        <h4>LetsUpgrade & NSDC</h4>
+                        <p>Mastered data manipulation, spreadsheet architecture, and efficient decision-making
+                            reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding alt-bg">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Featured Projects</h2>
+                <div class="divider"></div>
+                <p class="subtitle">A selection of my recent data-driven work from GitHub</p>
+            </div>
+
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card reveal-up">
+                    <div class="card-icon"><i class="ph-duotone ph-youtube-logo"></i></div>
+                    <h3>YouTube Trending Analytics</h3>
+                    <p>Comprehensive data analytics using Tableau. Analyzed global trending data across US, GB, CA, and
+                        IN to understand engagement vs views and sentiment distribution.</p>
+                    <div class="project-tags">
+                        <span>Tableau</span><span>Data Storytelling</span><span>Analytics</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="card-icon"><i class="ph-duotone ph-trend-up"></i></div>
+                    <h3>Time Series Trend Prediction</h3>
+                    <p>Machine Learning project covering forecasting and continuous trend prediction using historical
+                        metrics.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Jupyter</span><span>Forecasting</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="card-icon"><i class="ph-duotone ph-users-three"></i></div>
+                    <h3>Customer Segmentation (RFM)</h3>
+                    <p>Advanced EDA and Recency, Frequency, Monetary (RFM) analysis to segment customer bases for
+                        targeted marketing strategies.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Pandas</span><span>Clustering</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card reveal-up">
+                    <div class="card-icon"><i class="ph-duotone ph-database"></i></div>
+                    <h3>ETL & Data Modeling</h3>
+                    <p>Designed mini ETL pipelines and a robust Star Schema model for efficient data warehousing and
+                        querying.</p>
+                    <div class="project-tags">
+                        <span>SQL</span><span>PowerBI</span><span>ETL</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="card-icon"><i class="ph-duotone ph-chart-line-up"></i></div>
+                    <h3>A/B Testing & Hypothesis</h3>
+                    <p>Statistical validation using Python. Executed A/B tests to identify significant patterns and
+                        validate business hypotheses.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Statistics</span><span>A/B Testing</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="card-icon"><i class="ph-duotone ph-shield-check"></i></div>
+                    <h3>Vulnerability Scanner</h3>
+                    <p>Internship project leveraging Python to scan website vulnerabilities, complete with a custom
+                        HTML-based UI for user interaction.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>HTML</span><span>Security</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container text-center reveal-up">
+            <h2>Let's Connect</h2>
+            <div class="divider mx-auto"></div>
+            <p class="contact-desc">I am currently open to Data Analyst internships or entry-level roles. Whether you
+                have a question or just want to say hi, I'll try my best to get back to you!</p>
+
+            <a href="mailto:himabinduakkamgari@gmail.com" class="btn btn-primary pulse-btn"><i
+                    class="ph-bold ph-envelope-simple"></i> Say Hello</a>
+
+            <div class="social-links mt-4">
+                <a href="https://github.com/himabindu-5" target="_blank" rel="noopener noreferrer" class="social-icon"
+                    aria-label="GitHub">
+                    <i class="ph-fill ph-github-logo"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hima-bindu-akkamgari-ba2ab2353" target="_blank"
+                    rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                    <i class="ph-fill ph-linkedin-logo"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Hima Bindu Akkamgari. Designed with <i class="ph-fill ph-heart" style="color: #ef4444;"></i>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
